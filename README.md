@@ -1,5 +1,6 @@
 # Warframe-Auto-Check-In
-A simple ahk script to automatically login and get daily rewards in Warframe.
+This is an outdated version of the script running on ahk 1.1 for a newer version here.
+Это устаревшая версия скрипта работающая на версии ahk 1.1 для новой версии сюда.
 
 # [English version of script.](https://github.com/MotiasNotMe/Warframe-Auto-Check-In/tree/main-en)
 # [Русская версия скрипта.](https://github.com/MotiasNotMe/Warframe-Auto-Check-In/tree/main-ru)
