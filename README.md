@@ -1,4 +1,4 @@
-# Warframe-Auto-Check-In
+# Warframe-Auto-Check-In 1.1
 - This is an outdated version of the script running on ahk 1.1 for a newer version here.
 - Это устаревшая версия скрипта работающая на версии ahk 1.1 для новой версии сюда.
 
