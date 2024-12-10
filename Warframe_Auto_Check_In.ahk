@@ -1,0 +1,59 @@
+﻿;;; Warframe Daily Check In. Auto login and auto claim rewards. Created by Motias. Translated by Deepl.
+	
+; --- Variables and directives
+#Requires AutoHotkey 1.1
+#NoEnv  
+SetWorkingDir %A_ScriptDir%  
+#SingleInstance
+CoordMode, Pixel, Window
+
+Run, run.bat, %A_ScriptDir%  ; - Game launch.
+
+Loop  ; - Waiting for the launcher window.
+{
+    WinWait, Warframe, , 3
+}
+Until ErrorLevel = 0
+If (ErrorLevel = 0)
+{
+	WinActivate, Warframe ahk_class Launcher  ; - Launcher window activation.
+	Loop  ; - Searching for the play button.
+	{
+    		ImageSearch, FoundX, FoundY, 0, 0, A_ScreenWidth, A_ScreenHeight, *10 Data/play.png  
+    		Sleep, 1000
+    	}
+   	 Until ErrorLevel = 0
+   	 If (ErrorLevel = 0)
+    	{
+        	Click, %FoundX%, %FoundY%
+        	Sleep, 100
+        
+        	WinActivate, Warframe ahk_class WarframePublicEvolutionGfxD3D11  ; - Waiting for the game to launch.
+        	Sleep, 1000 
+        
+;		Loop  ; - Searching for cancel button.
+;		{
+;			ImageSearch, FoundX1, FoundY1, 0, 0, A_ScreenWidth, A_ScreenHeight, *60 Data/cancel.png  
+;        		Sleep, 200
+;        	}
+;        	Until ErrorLevel = 0
+;        	If (ErrorLevel = 0)
+;        	{
+;			Click, %FoundX1%, %FoundY1%
+            
+            		Loop ; - Award Search.
+                    	{
+                   		ImageSearch, FoundX4, FoundY4, 0, 0, A_ScreenWidth, A_ScreenHeight, *90 Data/rewards.png  
+                    		Sleep, 200
+                    	}
+                    	Until ErrorLevel = 0
+                    	If (ErrorLevel = 0)
+                    	{   
+                        	CoordMode Mouse
+                        	Click, % Ceil(A_ScreenWidth * 0.74) "," Ceil(A_ScreenHeight * 0.73)                     
+                        	Sleep, 5000                        
+                        	Send !{F4}  ; - Quit
+			}
+;		}
+	}
+}
