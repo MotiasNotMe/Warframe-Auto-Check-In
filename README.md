@@ -1,19 +1,26 @@
 # Скрипт автосбора наград Warframe для русской версии игры.
 ## Требования:
-Windows, [AutoHotKey](https://www.autohotkey.com/), Steam, Warframe RU 2024.11.13.
+Windows, [AutoHotKey 1.1](https://www.autohotkey.com/), Steam, Warframe RU 2024.11.13.
 
 ## Установка:
-- Установите AutoHotkey.
+- Установите AutoHotkey __1.1__.
 - Скачайте и распакуйте Warframe-Auto-Check-In.zip
 - Отредактируйте с помощью блокнота Warframe_Auto_Check_In.ahk
-- Замените значение переменной Password на ваш пароль, например: `Password = % "MyStrongPassword123"` на `Password = % "MySuperMegaStrongPassword1235"`.
 - Запустите Warframe_Auto_Check_In.ahk и добавьте в автозапуск, если требуется.
 
-## Примечание:
-- Eсли ваше разрешение отличное от 1920x1080. Замените значения переменных сбора наград. Например: `ScreenWidthX2 := 1920 * 0.73` и `ScreenHeightY2 := 1080 * 0.74` на `ScreenWidthX2 := 3840 * 0.73` и `ScreenHeightY2 := 2160 * 0.74`
-- Если у вас не привязан аккаунт Steam к Warframe и вы при входе получаете оповещение: "Ваш акаунт Steam не привязан к Warframe" и вы каждый раз нажимаете "нет" удалите точки с запятой `;` начиная со строчки "Поиск кнопки отмена.", а так же внизу скрипта рядом со скобочкой `{`.
-- Если вы играете без Steam или используете другую ОС, замените строчку "Запуск игры". Например: `Run, run.bat, %A_ScriptDir%` на `Run, Launcher.exe, D:\Warframe\Tools`.
+### Примечание:
 - Если вы используете язык отличный от русского или анлийского сделайте необходимые скриншоты кнопок и замените их в папке Data.
 - Если вы хотите ускорить работу скрипта, ограничьте поле поиска для всех ImageSearch. Например заменив: `ImageSearch, FoundX1, FoundY1, 0, 0, A_ScreenWidth, A_ScreenHeight, *60 Data/cancel.png` на `ImageSearch, FoundX1, FoundY1, 344, 437, 1577, 643, *60 Data/cancel.png`
 
+## Версия без Стим:
+- Установите AutoHotkey __1.1__.
+- Скачайте и распакуйте Warframe-Auto-Check-In.zip
+- Отредактируйте с помощью блокнота Warframe_Auto_Check_In_NO_STEAM.ahk
+- Замените значение переменной Password "Пароль" на ваш пароль, например: `Password = % "MyStrongPassword123"` на `Password = % "MySuperMegaStrongPassword1235"`.
+- Замените значение в строчке "Запуск игры". Например: `Run, Launcher.exe, D:\Warframe\Tools` to `Run, Launcher.exe, D:\Mygames\Warframe\Tools`.
+- Запустите Warframe_Auto_Check_In_NO_STEAM.ahk и добавьте в автозапуск, если требуется.
+- 
+### Примечание:
+- Важно: Ваш пароль хранится в текстовом файле. Это небезопасно.
+  
 > ПРЕДУПРЕЖДЕНИЕ: Ваш пароль хранится в текстовом файле. Автор не несёт ответственности за утечку пароля, а так же за любые действия со стороны DE.
