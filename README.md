@@ -1,6 +1,6 @@
 # Warframe-Auto-Check-In 1.1
-- This is an outdated version of the script running on ahk 1.1 for a newer version here.
-- Это устаревшая версия скрипта работающая на версии ahk 1.1 для новой версии сюда.
+- This is an outdated version of the script for ahk 1.1. [New version](https://github.com/MotiasNotMe/Warframe-Daily-Check-In)
+Это устаревшая версия скрипта для ahk 1.1. [Новая версия](https://github.com/MotiasNotMe/Warframe-Daily-Check-In)
 
 # [English version of script.](https://github.com/MotiasNotMe/Warframe-Auto-Check-In/tree/main-en)
 # [Русская версия скрипта.](https://github.com/MotiasNotMe/Warframe-Auto-Check-In/tree/main-ru)
